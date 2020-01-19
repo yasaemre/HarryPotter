@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HouseViewController" customModule="HarryPotter" customModuleProvider="target">
+            <connections>
+                <outlet property="image" destination="tbX-jC-9si" id="Jlq-LR-7xs"/>
+                <outlet property="label" destination="fZb-Nr-tZu" id="zn3-Or-02B"/>
+                <outlet property="studentsButton" destination="pOc-GS-bjE" id="wse-Qu-tzx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have entered House Gryffindor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fZb-Nr-tZu">
+                    <rect key="frame" x="53" y="120" width="269" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tbX-jC-9si">
+                    <rect key="frame" x="67.5" y="173" width="240" height="289"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="289" id="1EI-Ec-m6T"/>
+                        <constraint firstAttribute="width" constant="240" id="m6p-e8-e3b"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pOc-GS-bjE">
+                    <rect key="frame" x="156.5" y="499" width="62" height="30"/>
+                    <state key="normal" title="Students"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fZb-Nr-tZu" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="120" id="6fN-68-Ygb"/>
+                <constraint firstItem="fZb-Nr-tZu" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eOh-PA-rzk"/>
+                <constraint firstItem="pOc-GS-bjE" firstAttribute="top" secondItem="tbX-jC-9si" secondAttribute="bottom" constant="37" id="gui-Ah-nkr"/>
+                <constraint firstItem="pOc-GS-bjE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="guv-3b-52g"/>
+                <constraint firstItem="tbX-jC-9si" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qSE-CT-6NA"/>
+                <constraint firstItem="tbX-jC-9si" firstAttribute="top" secondItem="fZb-Nr-tZu" secondAttribute="bottom" constant="32" id="wxU-iI-dud"/>
+            </constraints>
+            <point key="canvasLocation" x="32.799999999999997" y="52.623688155922046"/>
+        </view>
+    </objects>
+</document>
